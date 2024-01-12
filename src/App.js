@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import { Elements } from './Elements';
 import Elemtable from './Elemtable';
-import ActiveElem from './ActiveElem';
+import ActiveElem from '../src/ActiveElemPad/ActiveElem';
 import { useState } from 'react';
 
 function App() {
