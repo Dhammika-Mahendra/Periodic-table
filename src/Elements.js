@@ -4490,10 +4490,18 @@ export function Elements({children}) {
       "named_by": ""
     }
    ]
+
+   const colors={
+    Gr:{
+      dark : '#a8a5a5',
+      mid:'#B2AFC5',
+      light : '#e3dfde'
+    }
+   }
   
 
   return (
-    <Elm.Provider value={{ElemList}}>
+    <Elm.Provider value={{ElemList,colors}}>
         {children}
     </Elm.Provider>
   )
