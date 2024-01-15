@@ -7,6 +7,12 @@ import boil from '../../src/Icons/boil.png'
 import heat from '../../src/Icons/heat.png'
 import radius from '../../src/Icons/radius.png'
 import dense from '../../src/Icons/dense.png'
+import conduct from '../../src/Icons/conduct.png'
+import fusion from '../../src/Icons/fusion.png'
+import negative from '../../src/Icons/negative.png'
+import vapor from '../../src/Icons/vapor.png'
+import mass from '../../src/Icons/mass.png'
+import affinity from '../../src/Icons/affinity.png'
 import { useState } from 'react'
 
 export default function ActiveElem({Active}) {
@@ -32,8 +38,8 @@ export default function ActiveElem({Active}) {
           }} onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
         </Paper>
         <div style={{paddingLeft:'10px',paddingTop:'5px'}}>
-          <Typography sx={{fontSize:'12px',fontWeight:'bold',color:'black',marginBottom:'-5px'}}>{name}</Typography>
-          <Typography sx={{fontSize:'15px',color:colors.Gr.mid}}>{`${value} ${unit}`}</Typography>
+          <Typography sx={{fontSize:'12px',color:colors.Gr.mid,marginBottom:'-5px'}}>{name}</Typography>
+          <Typography sx={{fontSize:'15px',color:colors.Gr.dark,fontWeight:'bold'}}>{`${value} ${unit}`}</Typography>
         </div>
       </div>
     )
@@ -46,14 +52,14 @@ export default function ActiveElem({Active}) {
           <Property name={'Melting point'} value={ElemList[Active].melt} icon={melt} unit={'\'C'} col={'#77a9ba'}></Property>
           <Property name={'Boiling point'} value={ElemList[Active].boil} icon={boil} unit={'\'C'} col={'#77a9ba'}></Property>
           <Property name={'Specific heat'} value={ElemList[Active].specific_heat} icon={heat} unit={'J/kg'} col={'#77a9ba'}></Property>
-          <Property name={'Heat of fusion'} value={ElemList[Active].fusion_heat} icon={boil} unit={'J/kg'} col={'#77a9ba'}></Property>
-          <Property name={'Heat of vaporization'} value={ElemList[Active].vapor_heat} icon={boil} unit={'J/kg'} col={'#77a9ba'}></Property>
-          <Property name={'Thermal conductivity'} value={ElemList[Active].thermal_cond} icon={boil} unit={'J/m'} col={'#77a9ba'}></Property>
-          <Property name={'Atomic radius'} value={ElemList[Active].atomic_radius} icon={radius} unit={'nm'} col={'#77a9ba'}></Property>
-          <Property name={'Atomic mass'} value={ElemList[Active].atomic_mass} icon={boil} unit={'amu'} col={'#77a9ba'}></Property>
+          <Property name={'Heat of fusion'} value={ElemList[Active].fusion_heat} icon={fusion} unit={'J/mol'} col={'#77a9ba'}></Property>
+          <Property name={'Heat of vaporization'} value={ElemList[Active].vapor_heat} icon={vapor} unit={'J/mol'} col={'#77a9ba'}></Property>
+          <Property name={'Thermal conductivity'} value={ElemList[Active].thermal_cond} icon={conduct} unit={'W/mK'} col={'#77a9ba'}></Property>
+          <Property name={'Atomic radius'} value={ElemList[Active].atomic_radius} icon={radius} unit={'pm'} col={'#77a9ba'}></Property>
+          <Property name={'Atomic mass'} value={ElemList[Active].atomic_mass} icon={mass} unit={'amu'} col={'#77a9ba'}></Property>
           <Property name={'Density'} value={ElemList[Active].density} icon={dense} unit={'kg/m'} col={'#77a9ba'}></Property>
-          <Property name={'Electrone affinity'} value={ElemList[Active].e_affinity} icon={boil} unit={'J/kg'} col={'#77a9ba'}></Property>
-          <Property name={'Electrone negativity'} value={ElemList[Active].e_negativity} icon={boil} unit={'P'} col={'#77a9ba'}></Property>
+          <Property name={'Electrone affinity'} value={ElemList[Active].e_affinity} icon={affinity} unit={'J/mol'} col={'#77a9ba'}></Property>
+          <Property name={'Electrone negativity'} value={ElemList[Active].e_negativity} icon={negative} unit={'P'} col={'#77a9ba'}></Property>
         </Stack>
     </div>
   )

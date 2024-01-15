@@ -4493,7 +4493,7 @@ export function Elements({children}) {
 
    const colors={
     Gr:{
-      dark : '#a8a5a5',
+      dark : '#706e7a',
       mid:'#B2AFC5',
       light : '#e3dfde'
     }

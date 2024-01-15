@@ -14,17 +14,18 @@ export default function Elemtable({setActive}){
     position:'absolute',
     left: check.stat ? `${wLeft}px`:`${sLeft}px`,
     top: check.stat ? `${wTop}px`:`${sTop}px`,
-    backgroundColor: type==='Nonmetal (other)'?'#ffaaaa':
-                     type==='Alkali Metal'?'#ffaaaa':
-                     type==='Alkaline Earth Metal'?'#ffaaaa':
-                     type==='Metalloid'?'#ffaaaa':
-                     type==='Nonmetal'?'#ffaaaa':
-                     type==='Noble Gas'?'#ffaaaa':
-                     type==='Halogen'?'#ffaaaa':
-                     type==='Metal'?'#ffaaaa':
-                     type==='Transition Metal'?'#ffaaaa':
-                     type==='Lanthenide'?'#ffaaaa':
-                     '#ffaaaa'
+    backgroundColor: type==='Nonmetal (other)'?'#e0bc6e':
+                     type==='Alkali Metal'?'#6D5A7B':
+                     type==='Alkaline Earth Metal'?'#787795':
+                     type==='Metalloid'?'#598E65':
+                     type==='Nonmetal'?'#ACA84A':
+                     type==='Noble Gas'?'#c92634':
+                     type==='Halogen'?'#B98047':
+                     type==='Metal'?'#5D9AA5':
+                     type==='Transition Metal'?'#4B88B4':
+                     type==='Lanthanide'?'#C04766':
+                     type==='Actinide'?'#B6778C':
+                     '#ffffff'
   }))
 
   const {ElemList}=useContext(Elm)
