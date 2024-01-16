@@ -49,16 +49,27 @@ export default function ActiveElem({Active,activePropSet,activeProp}) {
     <div style={{height:'100vh',backgroundColor:'#f6f6ff',display:'flex',flexDirection:'column'}}>
         <Typography variant='h5' sx={{color:colors.Gr.mid,pl:'20px',pt:'15px'}}>{ElemList[Active].name}</Typography>
         <Stack sx={{pl:'10px'}}>
+
           <Property name={'Melting point'} entryname={'melt'} value={ElemList[Active].melt} icon={melt} unit={'\'C'} col={'#77a9ba'}></Property>
+
           <Property name={'Boiling point'} entryname={'boil'} value={ElemList[Active].boil} icon={boil} unit={'\'C'} col={'#77a9ba'}></Property>
+
           <Property name={'Specific heat'} entryname={'specific_heat'} value={ElemList[Active].specific_heat} icon={heat} unit={'J/kg'} col={'#77a9ba'}></Property>
+
           <Property name={'Heat of fusion'} entryname={'fusion_heat'} value={ElemList[Active].fusion_heat} icon={fusion} unit={'J/mol'} col={'#77a9ba'}></Property>
+
           <Property name={'Heat of vaporization'} entryname={'vapor_heat'} value={ElemList[Active].vapor_heat} icon={vapor} unit={'J/mol'} col={'#77a9ba'}></Property>
+
           <Property name={'Thermal conductivity'} entryname={'thermal_cond'} value={ElemList[Active].thermal_cond} icon={conduct} unit={'W/mK'} col={'#77a9ba'}></Property>
+
           <Property name={'Atomic radius'} entryname={'atomic_radius'} value={ElemList[Active].atomic_radius} icon={radius} unit={'pm'} col={'#77a9ba'}></Property>
+
           <Property name={'Atomic mass'} entryname={'atomic_mass'} value={ElemList[Active].atomic_mass} icon={mass} unit={'amu'} col={'#77a9ba'}></Property>
+
           <Property name={'Density'} entryname={'density'} value={ElemList[Active].density} icon={dense} unit={'kg/m'} col={'#77a9ba'}></Property>
+
           <Property name={'Electrone affinity'} entryname={'e_affinity'} value={ElemList[Active].e_affinity} icon={affinity} unit={'J/mol'} col={'#77a9ba'}></Property>
+          
           <Property name={'Electrone negativity'} entryname={'e_negativity'} value={ElemList[Active].e_negativity} icon={negative} unit={'P'} col={'#77a9ba'}></Property>
         </Stack>
     </div>
